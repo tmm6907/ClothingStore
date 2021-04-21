@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './components/Header';
 import NavbarComp from './components/Navbar';
 import JumbotronComp from './components/Jumbotron';
 import CardComp from './components/Card';
 import Footer from './components/Footer';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Container, Row, Col } from 'reactstrap';

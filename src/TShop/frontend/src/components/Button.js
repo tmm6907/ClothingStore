@@ -3,7 +3,7 @@ import { Button } from 'reactstrap';
 
 const ButtonComp = ({title}) => {
     return (
-        <Button style={{ backgroundColor:"black" }}> {title}</Button>
+        <Button className="btn-store-main"> {title}</Button>
     )
 }
 
