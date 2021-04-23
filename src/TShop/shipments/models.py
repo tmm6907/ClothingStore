@@ -18,4 +18,4 @@ def generate_unique_ship_id():
 class ShippingDetail(models.Model):
     order_num           = models.ForeignKey(Order, on_delete=models.CASCADE)
     ship_id             = models.CharField(max_length=8, unique=True)
-    username            = models.ForeignKey(Profile, on_delete=models.CASCADE)
+    ship_date           = models.DateTimeField(auto_now_add=True)

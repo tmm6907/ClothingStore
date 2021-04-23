@@ -18,12 +18,8 @@ const Header = () => {
                     <Link to="/cart" className="icon-link"><ShoppingCartIcon className="mx-1 btn-social"/></Link>
                 </div>
                 <Switch>
-                    <Route path="/profile">
-                        <Profile />
-                    </Route>
-                    <Route path="/Cart">
-                        <Cart />
-                    </Route>
+                    <Route path="/profile" component={Profile} />
+                    <Route path="/cart" component={Cart} />
                 </Switch>
             </Container>
         </BrowserRouter>

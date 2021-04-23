@@ -45,18 +45,10 @@ const NavbarComp = (props) => {
                 </Navbar>
                 <Switch>
                     <Route exact path="/" />
-                    <Route path="/womens">
-                        <WomensPage />
-                    </Route>
-                    <Route path="/mens">
-                        <MensPage />
-                    </Route>
-                    <Route path="/sale">
-                        <SalePage />
-                    </Route>
-                    <Route path="/about">
-                        <About />
-                    </Route>
+                    <Route path="/womens" component={WomensPage} />
+                    <Route path="/mens" component={MensPage} />
+                    <Route path="/sale" component={SalePage} />
+                    <Route path="/about" component={About} />
                 </Switch>
             </Container>
         </BrowserRouter>

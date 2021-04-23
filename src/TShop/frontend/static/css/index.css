@@ -5,30 +5,30 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.btn-svg{
+#btn-svg{
   color: black;
 }
 
-.nav-link{
+#nav-link{
   color: black;
 }
 
-.nav-link:hover{
+#nav-link:hover{
   color:#616161;
 }
 
-.icon-link{
+#icon-link{
   color: black;
 }
 
-.icon-link:hover{
+#icon-link:hover{
   color: black;
 }
 
-.btn-store-main{
+#btn-store-main{
   background-color: black;
 }
 
-.btn-store-main:hover{
+#btn-store-main:hover{
   background-color:#616161;
 }

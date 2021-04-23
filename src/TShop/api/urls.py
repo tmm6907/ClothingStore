@@ -15,14 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import ProfileListAPI, OrderListAPI, OrderItemsListAPI, ItemListAPI, ShippingDetailListAPI
+from .views import *
 
 app_name = 'api'
 
 urlpatterns = [
-    path('profiles/', ProfileListAPI.as_view(), name="profiles"),
-    path('orders/', OrderListAPI.as_view(), name="orders"),
-    path('orderitems/', OrderItemsListAPI.as_view(), name="orderitems"),
+    path('profiles/', ProfileListCreateAPI.as_view(), name="profiles"),
+    path('orders/', OrderListCreateAPI.as_view(), name="orders"),
+    path('orderitems/', OrderItemsCreateListAPI.as_view(), name="orderitems"),
     path('items/', ItemListAPI.as_view(), name="items"),
-    path('shipdetails/', ShippingDetailListAPI.as_view(), name="shipdetails"),
+    path('shipdetails/', ShippingDetailListCreateAPI.as_view(), name="shipdetails"),
+    path('shipping/', ShippingListCreateAPI.as_view(), name="shipping"),
 ]

@@ -2,9 +2,11 @@ from django.db import models
 import string
 import random
 
-variation_list =[
-
-]
+variation_list = (
+    ('red', 'red'),
+    ('green', 'green'),
+    ('blue','blue'),
+)
 LENGTH = 6
 # Create your models here.
 def generate_unique_item_id():
