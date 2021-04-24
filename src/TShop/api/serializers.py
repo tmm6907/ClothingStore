@@ -16,10 +16,15 @@ class OrderSerializer(serializers.ModelSerializer):
         model = Order
         fields = '__all__'
 
+class OrderCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Order
+        fields = ('order_price')
+
 class OrderItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = OrderItem
-        fields = '__all__'
+        fields = ('item_id','quantity')
 
 class ItemSerializer(serializers.ModelSerializer):
     class Meta:
@@ -34,5 +39,5 @@ class ShipmentSerializer(serializers.ModelSerializer):
 class ShippingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Shipping
-        fields = '__all__'
+        fields = ('address1', 'address2')
 

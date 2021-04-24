@@ -17,18 +17,22 @@
   color:#616161;
 }
 
-#icon-link{
-  color: black;
-}
-
-#icon-link:hover{
-  color: black;
-}
-
 #btn-store-main{
   background-color: black;
 }
 
 #btn-store-main:hover{
   background-color:#616161;
+}
+#btn-social{
+  color: black;
+}
+#btn-social:hover{
+  color: black;
+}
+a {
+  color:black;
+}
+a:hover {
+  color:black;
 }

@@ -1,4 +1,4 @@
-"""TShop URL Configuration
+'''TShop URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -12,7 +12,7 @@ Class-based views
 Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
+'''
 from django.contrib import admin
 from django.urls import path
 from .views import *
@@ -20,10 +20,10 @@ from .views import *
 app_name = 'api'
 
 urlpatterns = [
-    path('profiles/', ProfileListCreateAPI.as_view(), name="profiles"),
-    path('orders/', OrderListCreateAPI.as_view(), name="orders"),
-    path('orderitems/', OrderItemsCreateListAPI.as_view(), name="orderitems"),
-    path('items/', ItemListAPI.as_view(), name="items"),
-    path('shipdetails/', ShippingDetailListCreateAPI.as_view(), name="shipdetails"),
-    path('shipping/', ShippingListCreateAPI.as_view(), name="shipping"),
+    path('profiles/', ProfileListCreateAPI.as_view(), name='profiles'),
+    path('orders/', OrderListCreateAPI.as_view(), name='orders'),
+    path('orderitems/', OrderItemsCreateListAPI.as_view(), name='orderitems'),
+    path('items/', ItemListAPI.as_view(), name='items'),
+    path('shipdetails/', ShippingDetailListCreateAPI.as_view(), name='shipdetails'),
+    path('shipping/', ShippingListCreateAPI.as_view(), name='shipping'),
 ]

@@ -13,7 +13,7 @@ def generate_unique_order_num():
     return order_num
 
 class Order(models.Model):
-    order_num           = models.CharField(max_length=8, unique=True)
+    order_num           = models.CharField(max_length=8,default=generate_unique_order_num, unique=True)
     order_date          = models.DateTimeField(auto_now_add= True)
     username            = models.ForeignKey(Profile, on_delete=models.CASCADE)
     order_price         = models.DecimalField( max_digits=6, decimal_places=2)

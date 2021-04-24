@@ -26,19 +26,19 @@ const NavbarComp = (props) => {
                     <Collapse className="mr-auto" isOpen={isOpen} navbar>
                         <Nav className="mx-auto" navbar>
                             <NavItem className="mx-2">
-                                <Link to="/" className="nav-link">Home</Link>
+                                <a href="/" id="nav-link">Home</a>
                             </NavItem>
                             <NavItem className="mx-2">
-                                <Link to="/womens" className="nav-link">Womens</Link>
+                                <a href="/womens" id="nav-link">Womens</a>
                             </NavItem>
                             <NavItem className="mx-2">
-                                <Link to="/mens" className="nav-link">Mens</Link>
+                                <a href="/mens" id="nav-link">Mens</a>
                             </NavItem>
                             <NavItem className="mx-2">
-                                <Link to="/sale" className="nav-link">Sale</Link>
+                                <a href="/sale" id="nav-link">Sale</a>
                             </NavItem>
                             <NavItem className="mx-2">
-                                <Link to="/about" className="nav-link">About</Link>
+                                <a href="/about" id="nav-link">About</a>
                             </NavItem>
                         </Nav>
                     </Collapse>

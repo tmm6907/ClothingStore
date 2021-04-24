@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import NavbarComp from './components/Navbar';
 import JumbotronComp from './components/Jumbotron';
