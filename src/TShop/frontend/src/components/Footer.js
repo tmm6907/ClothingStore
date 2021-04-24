@@ -11,16 +11,16 @@ const Footer = () => {
         <footer>
             <Container className="mt-5 mb-3">
                 <a href="https://www.facebook.com" target="_blank">
-                    <FacebookIcon  className="mx-1 btn-svg"/>  
+                    <FacebookIcon id="btn-svg" className="mx-1"/>  
                 </a>
                 <a href="https://www.instagram.com" target="_blank">
-                    <InstagramIcon  className="mx-1 btn-svg"/>  
+                    <InstagramIcon  id="btn-svg" className="mx-1"/>  
                 </a>
                 <a href="https://www.twitter.com" target="_blank">
-                    <TwitterIcon  className="mx-1 btn-svg"/>  
+                    <TwitterIcon  id="btn-svg" className="mx-1"/>  
                 </a>
                 <a href="email/" target="_blank">
-                    <EmailIcon  className="mx-1 btn-svg"/>
+                    <EmailIcon  id="btn-svg" className="mx-1"/>
                 </a>
                 <div className="float-right">© 2021 ONLINE STORE</div>
             </Container>

@@ -26,37 +26,29 @@ const NavbarComp = (props) => {
                     <Collapse className="mr-auto" isOpen={isOpen} navbar>
                         <Nav className="mx-auto" navbar>
                             <NavItem className="mx-2">
-                                <Link to="/" className="nav-link">Home</Link>
+                                <a href="/" id="nav-link">Home</a>
                             </NavItem>
                             <NavItem className="mx-2">
-                                <Link to="/womens" className="nav-link">Womens</Link>
+                                <a href="/womens" id="nav-link">Womens</a>
                             </NavItem>
                             <NavItem className="mx-2">
-                                <Link to="/mens" className="nav-link">Mens</Link>
+                                <a href="/mens" id="nav-link">Mens</a>
                             </NavItem>
                             <NavItem className="mx-2">
-                                <Link to="/sale" className="nav-link">Sale</Link>
+                                <a href="/sale" id="nav-link">Sale</a>
                             </NavItem>
                             <NavItem className="mx-2">
-                                <Link to="/about" className="nav-link">About</Link>
+                                <a href="/about" id="nav-link">About</a>
                             </NavItem>
                         </Nav>
                     </Collapse>
                 </Navbar>
                 <Switch>
                     <Route exact path="/" />
-                    <Route path="/womens">
-                        <WomensPage />
-                    </Route>
-                    <Route path="/mens">
-                        <MensPage />
-                    </Route>
-                    <Route path="/sale">
-                        <SalePage />
-                    </Route>
-                    <Route path="/about">
-                        <About />
-                    </Route>
+                    <Route path="/womens" component={WomensPage} />
+                    <Route path="/mens" component={MensPage} />
+                    <Route path="/sale" component={SalePage} />
+                    <Route path="/about" component={About} />
                 </Switch>
             </Container>
         </BrowserRouter>

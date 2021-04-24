@@ -7,6 +7,11 @@ import Profile from './Profile';
 
 
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+const linkStyle = {
+    margin: "1rem",
+    textDecoration: "none",
+    color: 'black'
+  };
 
 const Header = () => {
     return (
@@ -14,16 +19,12 @@ const Header = () => {
             <Container className="pt-3 pb-5">
                 <div className=" h1 float-left">Online Store</div>
                 <div className="py-3 float-right">
-                    <Link to="/profile" className="icon-link"><PersonIcon className="mx-1 btn-social"/></Link>
-                    <Link to="/cart" className="icon-link"><ShoppingCartIcon className="mx-1 btn-social"/></Link>
+                    <a href="/profile"><PersonIcon id="btn-svg"/></a>
+                    <a href="/cart"><ShoppingCartIcon id="btn-svg"/></a>
                 </div>
                 <Switch>
-                    <Route path="/profile">
-                        <Profile />
-                    </Route>
-                    <Route path="/Cart">
-                        <Cart />
-                    </Route>
+                    <Route path="/profile" component={Profile} />
+                    <Route path="/cart" component={Cart} />
                 </Switch>
             </Container>
         </BrowserRouter>
