@@ -2,7 +2,7 @@ import React from 'react';
 import { Jumbotron } from 'reactstrap';
 import ButtonComp from './Button';
 
-const JumbotronComp = () => {
+const JumbotronComp = ({btn_title, btn_path}) => {
     return (
         <Jumbotron>
             <h1 className="display-3">Welcome to Online Store!</h1>
@@ -10,7 +10,7 @@ const JumbotronComp = () => {
             <hr className="my-2" />
             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
             <p className="lead">
-                <ButtonComp title="Shop Women's"/>
+            <a href={btn_path}><ButtonComp title={btn_title}></ButtonComp></a>
             </p>
         </Jumbotron>
     )

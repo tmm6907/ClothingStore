@@ -1,35 +1,35 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header';
-import NavbarComp from './components/Navbar';
-import JumbotronComp from './components/Jumbotron';
-import CardComp from './components/Card';
-import Footer from './components/Footer';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
-
-import { Container, Row, Col } from 'reactstrap';
+import { Container } from 'reactstrap';
 import { render } from 'react-dom';
+import SalePage from './components/SalePage';
+import Profile from './components/Profile';
+import Cart from './components/Cart';
+import MensPage from './components/MensPage';
+import WomesPage from './components/WomesPage';
+import About from './components/About';
+import HomePage from './components/HomePage';
 
 const App = () => {
   return (
-    <Container className="body mx-auto">
-      <Header />
-      <NavbarComp />
-      <JumbotronComp />
-      <Row>
-        <Col className="col-4">
-          <CardComp btn_title="Men's"  card_text="Some quick example text to build on the card title and make up the bulk of the card's content."/>
-        </Col>
-        <Col className="col-4">
-          <CardComp btn_title="Sales"  card_text="Some quick example text to build on the card title and make up the bulk of the card's content."/>
-        </Col>
-        <Col className="col-4">
-          <CardComp btn_title="Accessories"  card_text="Some quick example text to build on the card title and make up the bulk of the card's content."/>
-        </Col>
-      </Row>
-      <Footer />
-    </Container>
-  )
+    <BrowserRouter>
+      <Container className="body mx-auto">
+        
+
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/womens" component={WomesPage} />
+          <Route path="/mens" component={MensPage} />
+          <Route path="/sale" component={SalePage} />
+          <Route path="/about" component={About} />
+          <Route path="/profile" component={Profile} />
+          <Route path="/cart" component={Cart} />
+        </Switch>
+      </Container>
+    </BrowserRouter>
+  );
 }
 
 const appDiv = document.getElementById('root');
