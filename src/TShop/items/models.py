@@ -21,6 +21,7 @@ def generate_unique_item_id():
 class Item (models.Model):
     item_id             = models.CharField(max_length=8,default=generate_unique_item_id, unique=True)
     item_title          = models.CharField(max_length=48, unique=True)
+    slug                = models.SlugField()
     item_price          = models.DecimalField( max_digits=4, decimal_places=2)
     date_added          = models.DateTimeField(auto_now_add=True)
     variations          = models.CharField(max_length=24,choices=variation_list,default=None)

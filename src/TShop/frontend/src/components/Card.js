@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
     Card, CardImg, CardText, CardBody, CardTitle
   } from 'reactstrap';
@@ -12,7 +13,7 @@ const CardComp = ({btn_title, card_text, card_title, btn_path}) => {
             <CardBody>
                 <CardTitle>{card_title}</CardTitle>
                 <CardText>{card_text}</CardText>
-                <a href={btn_path}><ButtonComp title={btn_title}></ButtonComp></a>
+                <Link to={btn_path}><ButtonComp title={btn_title}></ButtonComp></Link>
             </CardBody>
         </Card>
     )
