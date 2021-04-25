@@ -10,4 +10,5 @@ urlpatterns = [
     path('mens/', index_view),
     path('cart/', index_view),
     path('sale/', index_view),
+    path('accessories/', index_view),
 ]
